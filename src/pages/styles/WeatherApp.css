@@ -366,3 +366,44 @@
 .city-button:hover {
     background-color: #4b4d57;
 }
+.change-unitofdegree-container {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các nút */
+}
+
+.change-unitofdegree-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Để tạo hình tròn */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng khi di chuột */
+}
+
+.change-unitofdegree-button h3 {
+    margin: 0;
+    font-size: 18px;
+    color: white; /* Màu chữ trắng cho cả hai nút */
+}
+
+.celsius {
+    background-color: blue; /* Màu cho nút Celsius */
+}
+
+.celsius:hover {
+    background-color: darkblue; /* Đổi màu khi hover cho Celsius */
+}
+
+.fahrenheit {
+    background-color: rgb(103, 56, 235); /* Màu cho nút Fahrenheit */
+}
+
+.fahrenheit:hover {
+    background-color: darkred; /* Đổi màu khi hover cho Fahrenheit */
+}

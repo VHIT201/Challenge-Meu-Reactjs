@@ -121,6 +121,15 @@ function WeatherApp() {
             </div>
 
             <div className="right-container">
+            <div className="change-unitofdegree-container">
+                <div onClick={()=>setUnitOfDegree('℃')} className="change-unitofdegree-button celsius">
+                    <h3>℃</h3>
+                </div>
+                <div onClick={()=>setUnitOfDegree('℉')} className="change-unitofdegree-button fahrenheit">
+                    <h3>℉</h3>
+                </div>
+            </div>
+
                 <div className="date-weather-container">
                     {dailyWeather.map((day, index) => (
                         <DateWeatherComponent
