@@ -1,0 +1,163 @@
+/* TodoApp.css */
+
+.todo-app {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    border-bottom: 1px solid #cacaca; 
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    flex:1;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .tabs button.active {
+    border-bottom: 2px solid #007BFF;
+  }
+  
+  .add-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .add-task input {
+    width: 80%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .add-task button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 16%;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+  
+  .task-list li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .task-list li input {
+    margin-right: 10px;
+  }
+  
+  .task-list li span.completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  /* Nhiệm vụ hoàn thành sẽ có màu xám và dấu gạch ngang */
+.task-list li.completed label span {
+    text-decoration: line-through;
+    color: #999; /* Màu xám nhạt */
+  }
+  
+  /* Checkbox đã được chọn */
+  .task-list li.completed input[type="checkbox"] {
+    accent-color: #007BFF; /* Màu xanh của checkbox */
+  }
+  
+  /* Nút xóa */
+  .task-list li .delete-icon {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #999;
+  }
+  
+  .task-list li .delete-icon:hover {
+    color: red; /* Màu đỏ khi hover lên icon xóa */
+  }
+  
+/* Container để chứa nút xóa tất cả */
+.delete-all-container {
+    display: flex;
+    justify-content: flex-end; /* Đẩy nút về bên phải */
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* Nút "Delete all" */
+  .delete-all-btn {
+    background-color: #ff4d4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    height: 40px;
+  }
+  
+  .delete-all-btn:hover {
+    background-color: #d43f3a; /* Màu tối hơn khi hover */
+  }
+/* Đảm bảo toàn bộ trang có chiều cao 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container chính của ứng dụng */
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh; 
+}
+
+/* Main content sẽ chiếm toàn bộ chiều cao còn lại sau khi trừ đi footer */
+.main-content {
+    flex-grow: 1; 
+    width: 500px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    color: #555;
+}
+

@@ -1,0 +1,25 @@
+/* CSS for QuoteGeneratorApp container */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: calc(100vw - 60px); /* Trừ đi chiều rộng của sidebar (60px khi không hover) */
+    height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+    transition: width 0.3s ease; /* Mượt mà khi sidebar thay đổi */
+    margin: 0;
+    padding:0;
+}
+
+/* Khi sidebar mở rộng, cập nhật lại chiều rộng của container */
+.sidebar:hover ~ .main-content .container {
+    width: calc(100vw - 200px); /* Trừ đi chiều rộng của sidebar khi mở rộng */
+}

@@ -1,0 +1,20 @@
+.highlight-component-container {
+    display: flex;
+    flex-direction: column;
+    background-color:#1E213A;
+    ;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 45%; /* Đảm bảo 2 thành phần sẽ vừa đủ một hàng */
+    gap:20px
+}
+.text {
+    color: white;
+}
+.text.title {
+    font-weight: 500; 
+}
+.text.value {
+    font-weight: 600;
+}
